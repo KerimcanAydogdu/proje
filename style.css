@@ -1,0 +1,60 @@
+@media (max-width: 600px) {
+    .image-with-text {
+        flex-direction: column;
+    }
+}
+
+#lrem {
+    list-style-type: none;
+}
+
+#lrem li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#lrem li::before {
+    content: "\2713";
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    font-size: 15px;
+    line-height: 1;
+    width: 16px;
+    height: 16px;
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.image-with-text img {
+    max-width: 100%;
+    height: auto;
+}
+
+.scrollable-content {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.navbar-nav li a {
+    margin: 0 10px;
+}
+
+a:hover{
+color: darkcyan;
+}
+
+@media (max-width: 600px) {
+.hide {
+    display: none;
+}
+}
